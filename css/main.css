@@ -1,0 +1,15 @@
+body {
+	width: 400px;
+	margin-top: 0px;
+}
+
+h1 {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.warning-div {
+	margin-left: 20px;
+	margin-right: 20px;
+}

@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Chrome Dictionary",
+	"description": "Find the definition of any word that you don't know.",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "img/icon-b19.png",
+		"default_title": "Chrome Dictionary",
+		"default_popup": "app.html"
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["js/content.js"]
+	}],
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/",
+		"http://api.wordnik.com:80/v4/word.json/*/"
+	],
+	"icons": { 
+		"16": "img/icon-b16.png",
+		"48": "img/icon-b48.png",
+		"128": "img/icon-b128.png"
+	}
+}
