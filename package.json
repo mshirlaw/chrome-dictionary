@@ -4,8 +4,8 @@
   "description": "A chrome extension to help you find the definition of words on any web page",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "clean": "rm -r node_modules/"
+    "build": "webpack --config webpack.config.js; cp -r src/css dist/; cp -r src/img dist/; cp src/app.html dist/; cp src/manifest.json dist/",
+    "clean": "rm -r dist/"
   },
   "repository": {
     "type": "git",
