@@ -1,5 +1,5 @@
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 	if (request.text == 'getSelectedText') {
-		sendResponse({ searchTerm: window.getSelection().toString() });;
+		sendResponse({ searchTerm: window.getSelection().toString() });
 	}
 });

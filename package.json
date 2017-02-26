@@ -1,0 +1,33 @@
+{
+  "name": "chrome-dictionary",
+  "version": "1.0.0",
+  "description": "A chrome extension to help you find the definition of words on any web page",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "clean": "rm -r node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshirlaw/chrome-dictionary.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "dictionary"
+  ],
+  "author": "Matt Shirlaw <mshirlaw@yahoo.com> (https://github.com/mshirlaw/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshirlaw/chrome-dictionary/issues"
+  },
+  "homepage": "https://github.com/mshirlaw/chrome-dictionary#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.10",
+    "eslint": "^3.16.1",
+    "webpack": "^2.2.1"
+  }
+}
