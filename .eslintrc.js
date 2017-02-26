@@ -7,7 +7,6 @@ module.exports = {
 		"browser": true,
 		"node": true,
 	},
-	"parser": "babel-eslint",
 	"globals": {
 		"document": true,
 		"chrome": true

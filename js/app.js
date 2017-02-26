@@ -34,8 +34,12 @@ import { ViewBuilder } from './view-builder.class.js';
 	
 	function handleReadyStateChange() {
 		if (xhr.readyState == 4 && xhr.responseText) {
-			let viewBuilder = new ViewBuilder(app);
-			viewBuilder.buildDefinitionList(JSON.parse(xhr.responseText));
+			const viewBuilder = new ViewBuilder(app);
+			const list = JSON.parse(xhr.responseText);
+			if (list.length) {
+				viewBuilder.buildDefinitionList(list);
+			}
+			// TODO handle no results found
 		}
 	}
 	
